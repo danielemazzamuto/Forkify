@@ -127,10 +127,6 @@ const controlAddRecipe = async function (newRecipe) {
   }
 };
 
-const newFeature = function () {
-  console.log('welcome to the application');
-};
-
 //Publisher-Subscriber Pattern
 //Calling a function from recipe.View (publisher) and passing another function inside
 const init = function () {
@@ -141,6 +137,5 @@ const init = function () {
   paginationView.addHandlerClick(controlPagination);
   recipeView.addHandlerUpdateServings(controlServings);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  newFeature();
 };
 init();
